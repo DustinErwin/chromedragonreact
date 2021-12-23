@@ -1,70 +1,103 @@
-# Getting Started with Create React App
+# Dev Fit Gym Logistical Tracker
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+This is a gym tracker app which allows clients to create accounts, log in with existing accounts, see trainer information, view and join classes, and shop the Dev Fit store. It also allows trainers to add or remove their own classes. Managers on this app are able to view a list of trainers employed by the gym, pull up an individual trainer's information, terminate a trainer's employment by removing that trainer from the database, or hire a new trainer by adding his/her information into the database. A manager can also view all classes available at the gym for the week, view class rosters, and add/remove members from class rosters.
 
-In the project directory, you can run:
+## Deployed App
 
-### `yarn start`
+[Dev Fit App](https://dev-fit-gym-app.herokuapp.com/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Table of Contents
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- [Screenshots](#Screenshots)
+- [Technologies](#Technologies)
+- [Usage](#Usage)
+- [Installation](#Installation)
+- [Feedback](#Feedback)
+- [Future Development](#Future_Development)
 
-### `yarn test`
+## Screenshots
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![HomePage](./client/src/images/screenshots/homePage.png)
 
-### `yarn build`
+![RegistrationPage](./client/src/images/screenshots/registrationPage.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![MemberPage](./client/src/images/screenshots/memberPage.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![TrainerPage](./client/src/images/screenshots/trainerPage.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![ManagerPage](./client/src/images/screenshots/managerPage.png)
 
-### `yarn eject`
+![AddToRoster](./client/src/images/screenshots/addToRoster.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![TrainerInfo](./client/src/images/screenshots/trainerInfo.png)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![StorePage](./client/src/images/screenshots/storePage.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+[(Back to Top)](#Description)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Technologies
 
-## Learn More
+- React
+- node.js
+- Auth0
+- express
+- AtlasDB
+- MongoDb
+- Mongoose
+- nodemon
+- date-fns
+- Heroku
+- react-bootstrap
+- PayPal
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Usage
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Members
+   - Register for account from home page.
+   - Log in with registered account from home page.
+   - Join or drop classes.
+   - View classes they've registered for.
+   - View Gym's trainers.
+   - Shop at the Member Store.
+2. Trainers
+   - Log in from home page.
+   - Add Classes/classtimes for the week to be taught by that trainer.
+   - Delete Classes from the week that were added by that trainer.
+3. Managers
+   - Log in from home page.
+   - View list of trainers.
+   - View each trainer's demographics information.
+   - Terminate a trainer / remove him/her from the database.
+   - Hire a new trainer by entering his/her information into the database.
+   - View all classes being offered by the gym for the week.
+   - View class rosters.
+   - Add members to roster or delete members from roster for each class (in case client needs help with this process for some reason).
+   - View Store Order History.
 
-### Code Splitting
+## Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Deployed on Heroku
 
-### Analyzing the Bundle Size
+## Feedback
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Contact us with any feedback or questions through GitHub or by email.
 
-### Making a Progressive Web App
+- [Dustin](https://github.com/DustinErwin)
+- [Ethan](https://github.com/Ewager1)
+- [Jesal](https://github.com/JesalDM)
+- [Sarah](https://github.com/smanter82/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Future_Development
 
-### Advanced Configuration
+- Track sales data (Ex: How many people have been signed up, how many people have been called, how many calls have resulted in tours/memberships, etc.)
+- Track membership costs, gym’s income, employee costs (salaries, etc.)
+- Contact form
+- Upgrade, Downgrade, Cancel Membership
+- Trial Membership coupon codes
+- Manager can change class times, add / delete class
+- Trainer can change class times
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[(Back to Top)](#Description)
